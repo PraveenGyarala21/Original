@@ -1,8 +1,8 @@
 package com.crm.qa.testcases;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.crm.qa.base.TestBase;
@@ -19,7 +19,7 @@ public class LoginPageTest extends TestBase {
 	}
 	
 	
-	@BeforeTest
+	@BeforeMethod
 	public void setup() {
 		initialization();
 		loginPage = new LoginPage();
@@ -27,7 +27,7 @@ public class LoginPageTest extends TestBase {
 	
 	
 	
-	@Test
+	@Test(priority = 1)
 	public void loginPageTitleTest() {
 		
 		String actualTitle = loginPage.getLoginPageTitle();
@@ -36,8 +36,55 @@ public class LoginPageTest extends TestBase {
 	}
 	
 	
+	@Test(priority = 2)
+	public void emailFieldExistTest(){
 	
-	@AfterTest
+		boolean emailExist = loginPage.verifyEmailFieldExist();
+		
+		Assert.assertTrue(emailExist);
+		
+	}
+	
+	
+	@Test(priority = 3)
+	public void passwordFieldExistTest(){
+		
+		boolean passwordExist = loginPage.verifyPasswordExist();
+		
+		Assert.assertTrue(passwordExist);
+	}
+	
+	
+	@Test(priority = 4)
+	public void loginButtonExistTest(){
+		
+		boolean loginButtonExist = loginPage.verifyLoginButtonExist();
+		
+		Assert.assertTrue(loginButtonExist);
+	}
+	
+	
+	@Test(priority = 5)
+	public void clikForgotLinkTest(){
+		 
+	boolean resetPasswordButtonExist = loginPage.clickForgotLink();
+	
+	Assert.assertTrue(resetPasswordButtonExist);
+	
+	}
+	
+	
+	@Test(priority = 6)
+	public void clickSignUpLinkTest(){
+		
+		boolean signUpButtonExist = loginPage.clickSignUpLlink();
+		
+		Assert.assertTrue(signUpButtonExist);
+	}
+	
+	
+	
+	@AfterMethod
 	public void tearDown() {
 		driver.quit();
 	}
