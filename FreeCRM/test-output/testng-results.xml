@@ -1,85 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="70542" started-at="2019-07-09T09:02:17Z" finished-at="2019-07-09T09:03:28Z">
+  <suite started-at="2019-07-09T19:11:47Z" name="Default suite" finished-at="2019-07-09T19:12:07Z" duration-ms="19223">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="70542" started-at="2019-07-09T09:02:17Z" finished-at="2019-07-09T09:03:28Z">
-      <class name="com.crm.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3e6fa38a]" name="setup" is-config="true" duration-ms="10132" started-at="2019-07-09T14:32:17Z" finished-at="2019-07-09T14:32:27Z">
+    <test started-at="2019-07-09T19:11:47Z" name="Default test" finished-at="2019-07-09T19:12:07Z" duration-ms="19223">
+      <class name="com.crm.qa.testcases.ContactsPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@5609159b]" started-at="2019-07-09T19:11:47Z" name="setup" finished-at="2019-07-09T19:12:04Z" duration-ms="16134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@3e6fa38a]" name="loginPageTitleTest" duration-ms="26" started-at="2019-07-09T14:32:27Z" finished-at="2019-07-09T14:32:27Z">
+        <test-method signature="clickEditTest()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@5609159b]" started-at="2019-07-09T19:12:04Z" name="clickEditTest" finished-at="2019-07-09T19:12:06Z" duration-ms="2022" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3e6fa38a]" name="tearDown" is-config="true" duration-ms="676" started-at="2019-07-09T14:32:27Z" finished-at="2019-07-09T14:32:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3e6fa38a]" name="setup" is-config="true" duration-ms="9281" started-at="2019-07-09T14:32:28Z" finished-at="2019-07-09T14:32:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="emailFieldExistTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@3e6fa38a]" name="emailFieldExistTest" duration-ms="92" started-at="2019-07-09T14:32:37Z" finished-at="2019-07-09T14:32:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emailFieldExistTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3e6fa38a]" name="tearDown" is-config="true" duration-ms="661" started-at="2019-07-09T14:32:37Z" finished-at="2019-07-09T14:32:38Z">
+        </test-method> <!-- clickEditTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@5609159b]" started-at="2019-07-09T19:12:06Z" name="tearDown" finished-at="2019-07-09T19:12:07Z" duration-ms="1024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3e6fa38a]" name="setup" is-config="true" duration-ms="9755" started-at="2019-07-09T14:32:38Z" finished-at="2019-07-09T14:32:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="passwordFieldExistTest()[pri:3, instance:com.crm.qa.testcases.LoginPageTest@3e6fa38a]" name="passwordFieldExistTest" duration-ms="116" started-at="2019-07-09T14:32:48Z" finished-at="2019-07-09T14:32:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- passwordFieldExistTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3e6fa38a]" name="tearDown" is-config="true" duration-ms="678" started-at="2019-07-09T14:32:48Z" finished-at="2019-07-09T14:32:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3e6fa38a]" name="setup" is-config="true" duration-ms="9748" started-at="2019-07-09T14:32:49Z" finished-at="2019-07-09T14:32:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginButtonExist()[pri:4, instance:com.crm.qa.testcases.LoginPageTest@3e6fa38a]" name="loginButtonExist" duration-ms="68" started-at="2019-07-09T14:32:58Z" finished-at="2019-07-09T14:32:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginButtonExist -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3e6fa38a]" name="tearDown" is-config="true" duration-ms="788" started-at="2019-07-09T14:32:58Z" finished-at="2019-07-09T14:32:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3e6fa38a]" name="setup" is-config="true" duration-ms="10420" started-at="2019-07-09T14:32:59Z" finished-at="2019-07-09T14:33:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="clikForgotLinkTest()[pri:5, instance:com.crm.qa.testcases.LoginPageTest@3e6fa38a]" name="clikForgotLinkTest" duration-ms="3140" started-at="2019-07-09T14:33:10Z" finished-at="2019-07-09T14:33:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clikForgotLinkTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3e6fa38a]" name="tearDown" is-config="true" duration-ms="663" started-at="2019-07-09T14:33:13Z" finished-at="2019-07-09T14:33:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3e6fa38a]" name="setup" is-config="true" duration-ms="9163" started-at="2019-07-09T14:33:13Z" finished-at="2019-07-09T14:33:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="clickSignUpLinkTest()[pri:6, instance:com.crm.qa.testcases.LoginPageTest@3e6fa38a]" name="clickSignUpLinkTest" duration-ms="4408" started-at="2019-07-09T14:33:23Z" finished-at="2019-07-09T14:33:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickSignUpLinkTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@3e6fa38a]" name="tearDown" is-config="true" duration-ms="697" started-at="2019-07-09T14:33:27Z" finished-at="2019-07-09T14:33:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
+      </class> <!-- com.crm.qa.testcases.ContactsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

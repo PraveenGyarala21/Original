@@ -9,7 +9,7 @@ import com.crm.qa.base.TestBase;
 public class LoginPage extends TestBase {
 	
 	
-	// Xpath for all elements in Login Page
+	// Xpath for all elements in Login Page or Page Factory
 	
 	String email_Field = "//input[@name='email']";
 	
@@ -29,7 +29,7 @@ public class LoginPage extends TestBase {
 	
 	
 	
-	
+	// Actions
 	
 	public String getLoginPageTitle() {
 		
@@ -87,13 +87,17 @@ public class LoginPage extends TestBase {
 	}
 	
 	
-	public void verifyLogin() {
+	public HomePage verifyLogin() {
 		
 		driver.findElement(By.xpath(email_Field)).sendKeys(prop.getProperty("userName"));
 		
 		driver.findElement(By.xpath(password_Field)).sendKeys(prop.getProperty("password"));
 		
 		driver.findElement(By.xpath(login_Button)).click();
+		
+		return new HomePage();
+		
+		
 	}
 	
 	
