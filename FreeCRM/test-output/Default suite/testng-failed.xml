@@ -5,7 +5,11 @@
     <classes>
       <class name="com.crm.qa.testcases.Assertions">
         <methods>
+<<<<<<< HEAD
           <include name="assertclass"/>
+=======
+          <include name="asserting"/>
+>>>>>>> branch 'master' of https://github.com/PraveenGyarala21/Original.git
         </methods>
       </class> <!-- com.crm.qa.testcases.Assertions -->
     </classes>

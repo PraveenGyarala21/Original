@@ -25,8 +25,10 @@ public class TestBase {
 		try {
 			
 		prop = new Properties();
-		FileInputStream ip = new FileInputStream("D:\\Automation_Workspace\\FreeCRM\\src\\main\\java\\com\\crm\\qa\\config\\config.properties");
+		FileInputStream ip = new FileInputStream("C:\\Users\\Pravss\\git\\Original\\FreeCRM\\src\\main\\java\\com\\crm\\qa\\config\\config.properties");
 		prop.load(ip);
+		
+		//C:\\Users\\Pravss\\git\\Original\\FreeCRM\\src\\main\\java\\com\\crm\\qa\\config\\config.properties
 		
 		}catch(FileNotFoundException e) {
 			
@@ -51,14 +53,18 @@ public class TestBase {
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
 			
-			System.setProperty("webdriver.chrome.driver", "D:\\Selenium Softwares\\chromedriver_win32 (3)\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "D:\\Selenium_Softwares\\chromedriver_win32\\chromedriver.exe");
 			driver = new ChromeDriver();
+			
+			//D:\\Selenium Softwares\\chromedriver_win32 (3)\\chromedriver.exe
 			
 		}
 		else if(browserName.equalsIgnoreCase("firefox")) {
 			
-			System.setProperty("webdriver.gecko.driver", "D:\\Selenium Softwares\\geckodriver-v0.23.0-win64\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "D:\\Selenium_Softwares\\geckodriver-v0.23.0-win64\\geckodriver.exe");
 			driver = new FirefoxDriver();
+			
+			//D:\\Selenium Softwares\\geckodriver-v0.23.0-win64\\geckodriver.exe
 			
 		}
 		

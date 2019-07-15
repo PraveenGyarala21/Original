@@ -31,7 +31,7 @@ public class LoginPageTest extends TestBase {
 	
 	
 	
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1)
 	public void loginPageTitleTest() {
 		
 		String actualTitle = loginPage.getLoginPageTitle();
@@ -40,7 +40,7 @@ public class LoginPageTest extends TestBase {
 	}
 	
 	
-	@Test(priority = 2, enabled = false)
+	@Test(priority = 2)
 	public void emailFieldExistTest(){
 	
 		boolean emailExist = loginPage.verifyEmailFieldExist();
@@ -50,7 +50,7 @@ public class LoginPageTest extends TestBase {
 	}
 	
 	
-	@Test(priority = 3, enabled = false)
+	@Test(priority = 3)
 	public void passwordFieldExistTest(){
 		
 		boolean passwordExist = loginPage.verifyPasswordExist();
@@ -59,7 +59,7 @@ public class LoginPageTest extends TestBase {
 	}
 	
 	
-	@Test(priority = 4, enabled = false)
+	@Test(priority = 4)
 	public void loginButtonExistTest(){
 		
 		boolean loginButtonExist = loginPage.verifyLoginButtonExist();
@@ -68,7 +68,7 @@ public class LoginPageTest extends TestBase {
 	}
 	
 	
-	@Test(priority = 5, enabled = false)
+	@Test(priority = 5)
 	public void clikForgotLinkTest(){
 		 
 	boolean resetPasswordButtonExist = loginPage.clickForgotLink();
@@ -78,7 +78,7 @@ public class LoginPageTest extends TestBase {
 	}
 	
 	
-	@Test(priority = 6, enabled = false)
+	@Test(priority = 6)
 	public void clickSignUpLinkTest(){
 		
 		boolean signUpButtonExist = loginPage.clickSignUpLlink();
